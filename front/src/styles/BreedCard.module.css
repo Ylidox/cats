@@ -1,0 +1,49 @@
+.background{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0.5, 0.5, 0.5, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  position: relative;
+  /* background: red; */
+}
+
+.container_modal{
+  width: 50%;
+  position: relative;
+
+  /* position: absolute; */
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.container{
+  /* max-width: 300px; */
+  width: calc((100% - 4px) / 3);
+  height: min-content;
+}
+
+@media screen and (max-width:610px) {
+  .container{
+    width: calc((100% - 5px) / 2);
+    height: min-content;
+  }
+}

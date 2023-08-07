@@ -66,7 +66,7 @@ export const BreedCard: FC<IBreed> = ({id, name, origin, description}) => {
                   onClick={() => decrementIndex()}
                 ></div>
                 <div className={styles.button_right}
-                  onClick={() => decrementIndex()}
+                  onClick={() => incrementIndex()}
                 ></div>
               </div>
 
